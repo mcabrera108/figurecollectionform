@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet"> 
+    <title>Figure Collection Sign Up</title>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <img src="images/figurecollectionlogo.png" class="logo-image">
+            <span>Figure-Chan</span>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="form-container">
+            <form action="https://httpbin.org/post" method="post">
+                <h1>Sign Up</h1>
+                <div>
+                    <label for="user-username">Username</label>
+                    <div class="form-description">Inappropriate Usernames are prohibited.</div>
+                    <input type="text" id="user-username" name="user-username" placeholder="Character Length 6-20" minlength="6" maxlength="20" title="Please enter a valid Username with 6-20 characters" required>
+                </div>
+                <div>
+                    <label for="user-email">Email</label>
+                    <input type="email" name="user-email" id="user-email" placeholder="example123@gmail.com" title="Please enter a valid email" required>
+                </div>
+                <div>
+                    <label for="user-password">Password</label>
+                    <input type="password" name="user-password" id="user-password" placeholder=" " title="Please enter a valid password" required>
+                    <div class="password-requirements form-description">
+                            <li>One lowercase character</li>
+                            <li>One upperCase character</li>
+                            <li>One number</li>
+                            <li>One special character</li>
+                            <li>Eight characters minimum</li>
+                    </div>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder= " " title="Please reenter your password" required>
+                </div>
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter" checked>
+                    <label for="newsletter">Send me emails for future Newsletters</label>
+                </div>
+
+                <button type="submit">Submit</button>
+                
+                <div>Already have an account? <a href="#">Log in</a></div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div>Copyright@Figure-Chan Inc.</div>
+    </div>
+    
+</body>
+</html>

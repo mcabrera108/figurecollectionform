@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    --header-footer-length: 10vh;
+    --page-default-color: #fff;
+    --page-default-background-color:rgb(44, 44, 44);
+    --page-default-line-color: rgb(94, 93, 93);
+    --page-default-description-color: rgb(119, 117, 117);
+    --page-default-button-color: rgb(39, 80, 156);
+    --page-default-font-color: #fff;
+    background-color: var(--page-default-background-color);
+}
+h1 {
+    font-family: 'Concert One', 'Patua One', sans-serif;
+}
+a {
+    color: rgb(59, 98, 226);
+}
+.header-container {
+    display: flex;
+    background-color: var(--page-default-background-color);
+    background-image: url(images/figure_anime.jpeg);
+    background-size: 100%;
+    height: var(--header-footer-length);
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    width: 90%;
+    height: auto;
+    color: var(--page-default-color);
+}
+.header span {
+    font-family: 'Patua One', 'Press Start 2P', sans-serif;
+    font-size: 1.7rem;
+}
+.logo-image {
+    height: 3vh;
+    width: auto;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-footer-length);
+    font-size: .7rem;
+    color: rgb(116, 116, 116);
+    font-family: 'Press Start 2P', 'Patua One', sans-serif;
+}
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.form-container h1 {
+    padding-bottom: 30px;
+}
+.form-container {
+    color: var(--page-default-font-color);
+    width: 50%;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    border: 1px solid var(--page-default-line-color);
+    background-color: rgb(46, 46, 46);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-container input[type="checkbox"]{
+    border-radius: 3px;
+}
+.form-container label[for="newsletter"]
+{
+    font-weight: 300;
+    font-size: .8rem;
+}
+.form-container input[type="text"], 
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    font-family: 'Patua One', 'Press Start 2P', sans-serif;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgb(44, 44, 44);
+    color: var(--page-default-font-color);
+    font-weight: 550;
+}
+.form-container input[type="text"]:invalid, 
+.form-container input[type="email"]:invalid,
+.form-container input[type="password"]:invalid {
+    border-color: rgb(228, 70, 49);
+
+}
+.form-container input[type="text"]:valid, 
+.form-container input[type="email"]:valid,
+.form-container input[type="password"]:valid {
+    border-color: rgb(49, 141, 228);
+
+
+}
+.form-container input[type="text"]:placeholder-shown, 
+.form-container input[type="email"]:placeholder-shown,
+.form-container input[type="password"]:placeholder-shown
+{
+    border-color: rgb(177, 177, 177);
+}
+form label {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Viga', 'Concert One', sans-serif;
+}
+.form-description {
+    font-size: .85rem;
+    color: var(--page-default-description-color);
+}
+form div{
+    padding-bottom: 15px;
+}
+.form-container button {
+    background-color: var(--page-default-button-color);
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--page-default-font-color);
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.form-container button:hover {
+    background-color: #5f98da;
+}
+.form-container button:active {
+    background-color: #407FC7;
+}
+.password-requirements {
+    padding-top: 15px;
+}
+@media only screen and (max-width: 420px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    .header span {
+        padding-bottom: 10px;
+    }
+    .form-container {
+        width: 80%;
+    }
+    .footer-container {
+        font-size: .5rem;
+    }
+}
